@@ -1,0 +1,28 @@
+{
+  "name": "helper-starter",
+  "version": "0.0.1",
+  "authors": [
+    "Mohamed Hassan <pencilpix11@gmail.com>"
+  ],
+  "description": "Helper-starter is a SCSS snippets for helper classes and mixins and variables that can be used in theming bootstrap",
+  "keywords": [
+    "helper-starter",
+    "helper-classes",
+    "pencilpix",
+    "helper",
+    "scss helper classes"
+  ],
+  "license": "MIT",
+  "homepage": "http://twitter.com/pencilpix",
+  "repository": {
+      "type": "git",
+      "url": "git://pencilpix@bitbucket.org/pencilpix/helper-starter.git"
+    },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
