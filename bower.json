@@ -16,7 +16,7 @@
   "homepage": "http://twitter.com/pencilpix",
   "repository": {
       "type": "git",
-      "url": "git://pencilpix@bitbucket.org/pencilpix/helper-starter.git"
+      "url": "https://pencilpix@bitbucket.org/pencilpix/helper-starter.git"
     },
   "ignore": [
     "**/.*",
