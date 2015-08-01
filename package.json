@@ -2,7 +2,7 @@
   "name": "helper-starter",
   "version": "0.0.2",
   "description": "Helper-starter is a SCSS snippets for helper classes and mixins and variables that can be used in theming bootstrap",
-  "main": "dist/_helper-classes.scss",
+  "main": "dist/*",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
