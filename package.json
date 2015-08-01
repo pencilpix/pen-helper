@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://pencilpix@bitbucket.org/pencilpix/helper-starter.git"
+    "url": "bower register pen-helper git://github.com/pencilpix/pen-helper.git"
   },
   "author": "Mohamed Hassan <pencilpix11@gmail.com>",
   "license": "MIT",
