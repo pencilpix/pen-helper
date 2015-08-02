@@ -12,7 +12,11 @@
     "helper",
     "scss helper classes"
   ],
-  "main": "dist/*",
+  "main": [
+  "dist/_variables.scss",
+  "dist/_mixins.scss",
+  "dist/_helper-classes.scss"
+  ],
   "license": "MIT",
   "homepage": "http://twitter.com/pencilpix",
   "repository": {
