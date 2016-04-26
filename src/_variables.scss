@@ -3,16 +3,13 @@
 
 // ltr fonts
 $ltrBodyFonts:          'roboto', helvetica, sans-serif;
-$ltrHeadFonts:          georgia, serif;
+$ltrHeadFonts:          'robotomono', georgia, serif;
 
 // rtl fonts
 $rtlBodyFonts:          'droid-naskh', helvetica, sans-serif;
 $rtlHeadFonts:          'droid-kufi', georgia, serif;
 
 
-// icon font
-
-$iconFont:              "FontAwesome";
 $rtlBodyFontFamily:     $rtlBodyFonts;
 $rtlHeadFontFamily:     $rtlHeadFonts;
 
@@ -25,13 +22,16 @@ $ltrHeadFontFamily:     $ltrHeadFonts;
 /*******************************************************************/
 /*** FONTS SETTING ***/
 /*******************************************************************/
-$smallSize:             12px;
-$normalSize:            14px;
-$mediumSize:            16px;
-$largeSize:             18px;
-$xLargeSize:            21px;
-$xxLargeSize:           24px;
-$xxxLargeSize:          30px;
+$htmlFontSize:          15px;
+$htmlSizeFraction:      15; // must be the same pixels of root element [html]
+
+$smallSize:             nToRem(12, $htmlSizeFraction); // 12px
+$normalSize:            nToRem(15, $htmlSizeFraction); // 15px
+$mediumSize:            nToRem(18, $htmlSizeFraction); // 18px
+$largeSize:             nToRem(21, $htmlSizeFraction); // 21px
+$xLargeSize:            nToRem(24, $htmlSizeFraction); // 24px
+$xxLargeSize:           nToRem(32, $htmlSizeFraction); // 32px
+$xxxLargeSize:          nToRem(42, $htmlSizeFraction); // 42px
 $lineHeight:            1.4285; // for body size 13px lineheight will be 20px;
 
 $bodySize:              $normalSize;
@@ -43,20 +43,23 @@ $headThree:             $largeSize;
 $headTwo:               $xLargeSize;
 $headOne:               $xxLargeSize;
 $superHead:             $xxxLargeSize;
-$xSuperHead:            $superHead + 12px;
+$xSuperHead:            $superHead + 1;
 
 $headerIconSize:        $largeSize;
 $headerLinkSize:        $normalSize;
 
-
-
+$xsSpace:               nToRem(3, $htmlSizeFraction);
+$smSpace:               nToRem(6, $htmlSizeFraction);
+$nmSpace:               nToRem(12, $htmlSizeFraction);
+$mdSpace:               nToRem(24, $htmlSizeFraction);
+$lgSpace:               nToRem(48, $htmlSizeFraction);
 
 
 
 
 // blues
-$blue:                  #3575f6;
-$blueDark:              #1d4fb3;
+$blue:                  #3f51b5;
+$blueDark:              darken($blue, 10%);
 
 // green
 $green:                 #2ac55d;

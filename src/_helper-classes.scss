@@ -1,8 +1,8 @@
 /*****************************************************/
 /*** the general classes that helps in coding ***/
 /*****************************************************/
-@important "extra/variables";
-@important "extra/mixins";
+// set the html (root element) font size to use REMs
+html                    {font-size: $htmlFontSize;}
 
 //lists
 .no-list-style          {list-style: none}
@@ -23,6 +23,9 @@
 .align-middle           { display: table-cell; }
 
 // text alignment
+.text-left              { text-align: left; }
+.text-right             { text-align: right; }
+.text-center            { text-align: center; }
 .text-center-xs         { @media(max-width: $screen-xs-max){ 
                             text-align: center !important;}
                         }
@@ -79,7 +82,7 @@ a.underline:hover       { text-decoration: none !important;}
 .bordered-inverse       { border-color: $inverseBorderColor; }
 .bordered-default       { border-color: $defaultBorderColor; }
 .bordered-default-alt   { border-color: $defaultAltBorderColor; }
-.bordered-twitter       { border-color:   $twitterBorderColor; }
+.bordered-twitter       { border-color: $twitterBorderColor; }
 .bordered-twitter-alt   { border-color: $twitterFootBorderColor; }
 .bordered-twitter-alt-alt
                         { border-color: $twitterBlue}
@@ -99,64 +102,64 @@ a.underline:hover       { text-decoration: none !important;}
 
 // padding
 .no-padding             { padding: 0;}
-.padding                { padding: 10px; }
-.padding-xs             { padding: 2px; }
-.padding-sm             { padding: 5px; }
-.padding-md             { padding: 15px; }
-.padding-lg             { padding: 30px ; }
+.padding                { padding: $nmSpace; }
+.padding-xs             { padding: $xsSpace; }
+.padding-sm             { padding: $smSpace; }
+.padding-md             { padding: $mdSpace; }
+.padding-lg             { padding: $lgSpace; }
 
-.padding-left           { padding-left: 10px; }
-.padding-right          { padding-right: 10px; }
-.padding-top            { padding-top: 10px;}
-.padding-bottom         { padding-bottom: 10px;}
+.padding-left           { padding-left: $nmSpace; }
+.padding-right          { padding-right: $nmSpace; }
+.padding-top            { padding-top: $nmSpace;}
+.padding-bottom         { padding-bottom: $nmSpace;}
 
-.padding-left-xs        { padding-left: 2px; }
-.padding-right-xs       { padding-right: 2px; }
-.padding-top-xs         { padding-top: 2px; }
-.padding-bottom-xs      { padding-bottom: 2px; }
+.padding-left-xs        { padding-left: $xsSpace; }
+.padding-right-xs       { padding-right: $xsSpace; }
+.padding-top-xs         { padding-top: $xsSpace; }
+.padding-bottom-xs      { padding-bottom: $xsSpace; }
 
-.padding-left-sm        { padding-left: 5px; }
-.padding-right-sm       { padding-right: 5px; }
-.padding-top-sm         { padding-top: 5px; }
-.padding-bottom-sm      { padding-bottom: 5px; }
+.padding-left-sm        { padding-left: $smSpace; }
+.padding-right-sm       { padding-right: $smSpace; }
+.padding-top-sm         { padding-top: $smSpace; }
+.padding-bottom-sm      { padding-bottom: $smSpace; }
 
-.padding-left-md        { padding-left: 15px;}
-.padding-right-md       { padding-right: 15px;}
-.padding-top-md         { padding-top: 15px;}
-.padding-bottom-md      { padding-bottom: 15px;}
+.padding-left-md        { padding-left: $mdSpace;}
+.padding-right-md       { padding-right: $mdSpace;}
+.padding-top-md         { padding-top: $mdSpace;}
+.padding-bottom-md      { padding-bottom: $mdSpace;}
 
-.padding-left-lg        { padding-left: 30px;}
-.padding-right-lg       { padding-right: 30px;}
-.padding-top-lg         { padding-top: 30px;}
-.padding-bottom-lg      { padding-bottom: 30px;}
+.padding-left-lg        { padding-left: $lgSpace;}
+.padding-right-lg       { padding-right: $lgSpace;}
+.padding-top-lg         { padding-top: $lgSpace;}
+.padding-bottom-lg      { padding-bottom: $lgSpace;}
 
 
 // margin
 .no-margin              { margin: 0;}
-.margin                 { margin: 10px; }
-.margin-sm              { margin: 5px; }
-.margin-md              { margin: 15px; }
-.margin-lg              { margin: 30px ; }
+.margin                 { margin: $nmSpace; }
+.margin-sm              { margin: $smSpace; }
+.margin-md              { margin: $mdSpace; }
+.margin-lg              { margin: $lgSpace; }
 
-.margin-left            { margin-left: 10px; }
-.margin-right           { margin-right: 10px; }
-.margin-top             { margin-top: 10px;}
-.margin-bottom          { margin-bottom: 10px;}
+.margin-left            { margin-left: $nmSpace; }
+.margin-right           { margin-right: $nmSpace; }
+.margin-top             { margin-top: $nmSpace;}
+.margin-bottom          { margin-bottom: $nmSpace;}
 
-.margin-left-sm         { margin-left: 5px; }
-.margin-right-sm        { margin-right: 5px; }
-.margin-top-sm          { margin-top: 5px; }
-.margin-bottom-sm       { margin-bottom: 5px; }
+.margin-left-sm         { margin-left: $smSpace; }
+.margin-right-sm        { margin-right: $smSpace; }
+.margin-top-sm          { margin-top: $smSpace; }
+.margin-bottom-sm       { margin-bottom: $smSpace; }
 
-.margin-left-md         { margin-left: 15px;}
-.margin-right-md        { margin-right: 15px;}
-.margin-top-md          { margin-top: 15px;}
-.margin-bottom-md       { margin-bottom: 15px;}
+.margin-left-md         { margin-left: $mdSpace;}
+.margin-right-md        { margin-right: $mdSpace;}
+.margin-top-md          { margin-top: $mdSpace;}
+.margin-bottom-md       { margin-bottom: $mdSpace;}
 
-.margin-left-lg         { margin-left: 30px;}
-.margin-right-lg        { margin-right: 30px;}
-.margin-top-lg          { margin-top: 30px;}
-.margin-bottom-lg       { margin-bottom: 30px;}
+.margin-left-lg         { margin-left: $lgSpace;}
+.margin-right-lg        { margin-right: $lgSpace;}
+.margin-top-lg          { margin-top: $lgSpace;}
+.margin-bottom-lg       { margin-bottom: $lgSpace;}
 
 .text-primary           { color: $primaryTxtColor; }
 .text-success           { color: $successTxtColor; }
@@ -168,7 +171,7 @@ a.underline:hover       { text-decoration: none !important;}
 .text-inverse           { color: $inverseTxtColor;}
 .text-white             { color: $whiteTxtColor; }
 .text-twitter           { color: $twitterBlue; }
-.text-grey              { color: $greyDark-alt}
+.text-grey              { color: $greyDark-alt; }
 
 
 // div's backgrounds
@@ -182,33 +185,57 @@ a.underline:hover       { text-decoration: none !important;}
 .bg-info-alt            { background-color: $infoAltColor; }
 .bg-white               { background-color: $whiteColor; }
 .bg-inverse             { background-color: $inverseColor; }
-.bg-twitter             { background-color: $twitterColor}
-.bg-twitter-alt         { background-color: $twitterFootBg}
-.bg-grey                { background-color: $grey-light-alt}
-.bg-blue                { background-color: $blue}
+.bg-twitter             { background-color: $twitterColor; }
+.bg-twitter-alt         { background-color: $twitterFootBg; }
+.bg-grey                { background-color: $grey-light-alt; }
+.bg-blue                { background-color: $blue; }
 
 
 
-.img-container          { width: 50px; height: 50px; vertical-align: middle; }
-.img-container-xs       { width: 25px; height: 25px; vertical-align: middle; }
-.img-container-sm       { width: 30px; height: 30px; vertical-align: middle; }
-.img-container-md       { width: 60px; height: 60px; vertical-align: middle; }
-.img-container-lg       { width: 80px; height: 80px; vertical-align: middle; }
+.img-container          { width: nToRem(54, $htmlSizeFraction);
+                          height: nToRem(54, $htmlSizeFraction);
+                          vertical-align: middle; }
+
+.img-container-xs       { width: nToRem(30, $htmlSizeFraction);
+                          height: nToRem(30, $htmlSizeFraction);
+                          vertical-align: middle; }
+
+.img-container-sm       { width: nToRem(48, $htmlSizeFraction);
+                          height: nToRem(48, $htmlSizeFraction);
+                          vertical-align: middle; }
+
+.img-container-md       { width: nToRem(60, $htmlSizeFraction);
+                          height: nToRem(60, $htmlSizeFraction);
+                          vertical-align: middle; }
+
+.img-container-lg       { width: nToRem(96, $htmlSizeFraction);
+                          height: nToRem(96, $htmlSizeFraction);
+                          vertical-align: middle; }
 
 
-.icon-pos-left          { margin-right: 5px;}
-.icon-pos-right         { margin-left: 5px;}
+.icon-pos-left          { margin-right: $smSpace;}
+.icon-pos-right         { margin-left: $smSpace;}
 .icon-sm                { font-size: $smallSize; }
 .icon-md                { font-size: $largeSize; }
 .icon-lg                { font-size: $xLargeSize; }
 
-.equal-cols             { margin-bottom: -1000em; padding-bottom: 1000em;}
+.equal-cols             { margin-bottom: -1000rem; padding-bottom: 1000rem;}
 .equal-cols-row         { overflow: hidden;}
 
 .btn-circle             { @include border-radius(50%); }
-.btn-circle.btn         { height: 36px; width: 36px; line-height: 36px; padding: 0; text-align: center;}
-.btn-circle.btn-lg      { width: 44px; height: 44px; line-height: 44px;}
-.btn-circle.btn-sm      { width: 22px; height: 22px; line-height: 22px;}
+.btn-circle.btn         { height: nToRem(36, $htmlSizeFraction);
+                          width: nToRem(36, $htmlSizeFraction);
+                          line-height: nToRem(36, $htmlSizeFraction);
+                          padding: 0; text-align: center;}
+
+.btn-circle.btn-lg      { height: nToRem(48, $htmlSizeFraction);
+                          width: nToRem(48, $htmlSizeFraction);
+                          line-height: nToRem(48, $htmlSizeFraction); }
+
+.btn-circle.btn-sm      { height: nToRem(24, $htmlSizeFraction);
+                          width: nToRem(24, $htmlSizeFraction);
+                          line-height: nToRem(24, $htmlSizeFraction); }
+
 
 /*****************************************************/
 /*** general-styles rtl ***/
@@ -233,54 +260,67 @@ a.underline:hover       { text-decoration: none !important;}
                         { border-color: $defaultAltBorderColor; }
     
 
-    .padding-left       { padding-right: 10px; padding-left: 0; }
-    .padding-right      { padding-left: 10px; padding-right: 0; }
+    .padding-left       { padding-right: $nmSpace; padding-left: 0; }
+    .padding-right      { padding-left: $nmSpace; padding-right: 0; }
     .padding-left.padding-right
-                        { padding-left: 10px; padding-right: 10px;}
+                        { padding-left: $nmSpace; padding-right: $nmSpace;}
 
-    .padding-left-xs    { padding-left: 0px; padding-right: 2px; }
-    .padding-right-xs   { padding-right: 0px; padding-left: 2px; }
+    .padding-left-xs    { padding-left:0; padding-right: $xsSpace; }
+    .padding-right-xs   { padding-right:0; padding-left: $xsSpace; }
     .padding-left-xs.padding-right-xs
-                        { padding-right: 2px; padding-left: 2px;}
+                        { padding-right: $xsSpace; padding-left: $xsSpace;}
 
-    .padding-left-sm    { padding-right: 5px; padding-left: 0;}
-    .padding-right-sm   { padding-left: 5px; padding-right: 0; }
+    .padding-left-sm    { padding-right: $smSpace; padding-left: 0;}
+    .padding-right-sm   { padding-left: $smSpace; padding-right: 0; }
     .padding-left-sm.padding-right-sm
-                        { padding-left: 5px; padding-right: 5px; }
+                        { padding-left: $smSpace; padding-right: $smSpace; }
 
-    .padding-left-md    { padding-right: 15px; padding-left: 0; }
-    .padding-right-md   { padding-left: 15px; padding-right: 0; }
+    .padding-left-md    { padding-right: $mdSpace; padding-left: 0; }
+    .padding-right-md   { padding-left: $mdSpace; padding-right: 0; }
     .padding-left-md.padding-right-md
-                        { padding-right: 15px; padding-left: 15px; }
+                        { padding-right: $mdSpace; padding-left: $mdSpace; }
 
-    .padding-left-lg    { padding-right: 30px; padding-left: 0;}
-    .padding-right-lg   { padding-left: 30px; padding-right: 0;}
+    .padding-left-lg    { padding-right: $lgSpace; padding-left: 0;}
+    .padding-right-lg   { padding-left: $lgSpace; padding-right: 0;}
     .padding-left-lg.padding-right-lg
-                        { padding-left: 30px; padding-right: 30px;}
+                        { padding-left: $lgSpace; padding-right: $lgSpace;}
 
-    .margin-left        { margin-right: 10px; margin-left: 0; }
-    .margin-right       { margin-left: 10px; margin-right: 0; }
-    .margin-left.margin-right{ margin-right: 10px; margin-left: 10px; }
+    .margin-left        { margin-right: $nmSpace; margin-left: 0; }
+    .margin-right       { margin-left: $nmSpace; margin-right: 0; }
+    .margin-left.margin-right{ margin-right: $nmSpace; margin-left: $nmSpace; }
 
-    .margin-left-sm     { margin-right: 5px; margin-left: 0; }
-    .margin-right-sm    { margin-left: 5px; margin-right: 0; }
+    .margin-left-sm     { margin-right: $smSpace; margin-left: 0; }
+    .margin-right-sm    { margin-left: $smSpace; margin-right: 0; }
     .margin-left-sm.margin-right-sm
-                        { margin-left: 5px; margin-right: 5px; }
+                        { margin-left: $smSpace; margin-right: $smSpace; }
 
 
-    .margin-left-md     { margin-right: 15px; margin-left: 0;}
-    .margin-right-md    { margin-left: 15px; margin-right: 0;}
+    .margin-left-md     { margin-right: $mdSpace; margin-left: 0;}
+    .margin-right-md    { margin-left: $mdSpace; margin-right: 0;}
     .margin-left-md.margin-right-md
-                        { margin-left: 15px; margin-right: 15px;}
+                        { margin-left: $mdSpace; margin-right: $mdSpace;}
 
-    .margin-left-lg     { margin-right: 30px; margin-left: 0;}
-    .margin-right-lg    { margin-left: 30px; margin-right: 0;}
+    .margin-left-lg     { margin-right: $lgSpace; margin-left: 0;}
+    .margin-right-lg    { margin-left: $lgSpace; margin-right: 0;}
     .margin-left-lg.margin-right-lg
-                        { margin-left: 30px; margin-right: 30px;}
+                        { margin-left: $lgSpace; margin-right: $lgSpace;}
 
-    .icon-pos-left      { margin-right: auto; margin-left: 5px;}
-    .icon-pos-right     { margin-left: auto; margin-right: 5px;}
+    .icon-pos-left      { margin-right: auto; margin-left: $smSpace;}
+    .icon-pos-right     { margin-left: auto; margin-right: $smSpace;}
     .icon-pos-left.icon-pos-right
-                        { margin-left: 5px; margin-right: 5px;}
+                        { margin-left: $smSpace; margin-right: $smSpace;}
+
+    .text-left          { text-align: right; }
+    .text-right         { text-align: left; }
+    .text-center-xs     { @media(max-width: $screen-xs-max){ 
+                                text-align: center !important;}
+                        }
+
+    .text-left-xs       { @media(max-width: $screen-xs-max){
+                            text-align: right !important; }
+                        }
+    .text-right-xs      { @media(max-width: $screen-xs-max){
+                            text-align: left !important; }
+                        }
 }
 
